@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+data/
+ckpt/
+results/
+smart/utils/logs/
