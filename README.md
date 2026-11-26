@@ -1,12 +1,10 @@
-# OnSite 2025 PKL inference
+# OnSite 2025 Scenario Generation Inference
 
 [中文说明](README_zh.md)
 
 Generate background-vehicle trajectories from OnSite 2025 `*_exam.pkl` and OpenDRIVE (`.xodr`) scenarios with the adapted SMART model. This branch outputs `*_output.pkl` and can render GIFs.
 
 ## Input and checkpoint
-
-Place the test data and model checkpoint as follows:
 
 ```text
 data/B/<scene>/<scene>_exam.pkl
@@ -18,11 +16,9 @@ Obtain the [checkpoint](https://yunpan.tongji.edu.cn/link/AA37DAF55B73094639BF22
 
 Empty `.gitkeep` files retain the input directories in Git; put scenario folders under `data/B/` and the checkpoint under `ckpt/`. Results are written to `results/pkl_2025/`.
 
-## Environment
-
-The supplied `requirements.txt` records the original model environment. Inference has been tested locally in the existing `catk` conda environment with Python 3.11 and PyTorch 2.4.1. PyTorch Geometric, `torch-scatter` and `torch-cluster` require builds compatible with the installed PyTorch and CUDA versions; see the comments in `requirements.txt`. The current inference implementation runs on CPU.
-
 ## Run
+
+The original model dependencies are listed in `requirements.txt`. Use Python 3.11 and PyTorch 2.4.1; PyTorch Geometric, `torch-scatter` and `torch-cluster` require builds compatible with the installed PyTorch and CUDA versions. The current inference implementation runs on CPU.
 
 ```bash
 python inference_pkl_2025.py --test_dir data/B --output_dir results/pkl_2025 --limit 10

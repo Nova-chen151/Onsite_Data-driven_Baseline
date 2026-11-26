@@ -1,4 +1,4 @@
-# OnSite 2025 PKL 推理
+# OnSite 2025 场景生成赛道赛题推理
 
 使用适配的 SMART 模型，根据 `*_exam.pkl` 和对应的 `.xodr` 路网生成背景车轨迹，输出 `*_output.pkl`，并支持 GIF 可视化。
 
@@ -16,7 +16,7 @@ ckpt/epoch=07-step=30440-val_loss=2.52.ckpt
 
 ## 运行
 
-本机在已有 `catk` 环境中验证，Python 3.11、PyTorch 2.4.1；原模型环境依赖见 `requirements.txt`，其中 PyTorch Geometric、`torch-scatter` 和 `torch-cluster` 需要与 PyTorch / CUDA 版本匹配。当前实现使用 CPU。
+Python 3.11、PyTorch 2.4.1；原模型环境依赖见 `requirements.txt`，其中 PyTorch Geometric、`torch-scatter` 和 `torch-cluster` 需要与 PyTorch / CUDA 版本匹配。当前实现使用 CPU。
 
 ```bash
 python inference_pkl_2025.py --test_dir data/B --output_dir results/pkl_2025 --limit 10
