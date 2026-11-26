@@ -12,7 +12,7 @@ ckpt/epoch=07-step=30440-val_loss=2.52.ckpt
 
 [模型权重](https://yunpan.tongji.edu.cn/link/AA37DAF55B73094639BF22C8B9FCD0CD38)需单独下载；仓库不包含数据、权重和推理结果。`smart/tokens/` 中的两个令牌文件是推理必需文件。
 
-仓库中的空 `.gitkeep` 文件用于保留目录：场景文件夹放在 `data/B/`，模型权重放在 `ckpt/`，输出写入 `results/pkl_2025/`。
+仓库中的空 `.gitkeep` 文件用于保留输入目录：场景文件夹放在 `data/B/`，模型权重放在 `ckpt/`。输出写入 `results/pkl_2025/`。
 
 ## 运行
 

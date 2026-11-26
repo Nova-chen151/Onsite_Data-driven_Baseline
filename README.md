@@ -16,7 +16,7 @@ ckpt/epoch=07-step=30440-val_loss=2.52.ckpt
 
 Obtain the [checkpoint](https://yunpan.tongji.edu.cn/link/AA37DAF55B73094639BF22C8B9FCD0CD38) separately. Data, checkpoint and generated results are not included in this repository. The model's two token files are included in `smart/tokens/` and are required for inference.
 
-Empty `.gitkeep` files retain these directories in Git; put scenario folders under `data/B/` and the checkpoint under `ckpt/`. Results are written to `results/pkl_2025/`.
+Empty `.gitkeep` files retain the input directories in Git; put scenario folders under `data/B/` and the checkpoint under `ckpt/`. Results are written to `results/pkl_2025/`.
 
 ## Environment
 
